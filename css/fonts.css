@@ -1,0 +1,23 @@
+@font-face
+{
+	font-family: oldType;
+	src: url(fonts/a_OldTyperNr.ttf);
+}
+
+@font-face
+{
+	font-family: typeWriter;
+	src: url(fonts/CMU_Typewriter_Text_Bold.otf);
+}
+
+@font-face
+{
+	font-family: CeraPro;
+	src: url(fonts/CeraPro-Bold.ttf);
+}
+
+@font-face
+{
+	font-family: comicSan;
+	src: url(fonts/Comic_Sans_MS.ttf);
+}

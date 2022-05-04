@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^admin$ admin.php
+RewriteRule ^admin\/dishs$ admins/dish.php
+
+php_value session.gc_maxlifetime 604800
+php_value session.cookie_lifetime 604800

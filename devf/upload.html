@@ -1,0 +1,24 @@
+<html>
+    <head>
+
+        <title>Photo upload</title>
+
+        <link rel='stylesheet' href='style.css' />
+        
+        <script type='text/javascript' src='../js/jquery.js' ></script>
+        <script type='text/javascript' src='script.js' ></script>
+
+    </head>
+    <body>
+
+        <form id="form" action="upload.php" method="post" enctype="multipart/form-data">
+            <input id="imgInput" type="file" accept="image/*" name="image" />
+            <input type="submit" value="Upload">
+        </form>
+
+        <div id='imgPrevBox' >
+            <img src='' id='imgPrevView' />
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,70 @@
+body
+{
+	background-color: white;
+	color: black;
+	font-family: CeraPro;
+}
+
+#loginBox
+{
+	font-size: 30px;
+	
+	margin: 10px;
+	padding: 5px;
+	width: 245px;
+	position: fixed;
+	right: 800px;
+	top: 250px;
+}
+
+#hintBox
+{
+	padding: 10px;
+}
+
+#loginButton
+{
+	border-radius: 15px;
+	text-align: center;
+	cursor: pointer;
+	background-color: #71c7f0;
+	margin-top: 20px;
+	color: white;
+	padding: 10px;
+	width: 150px;
+	margin-left: 37.5px;
+}
+
+#loginButton:hover
+{
+	background-color: #eded61;
+}
+
+input
+{
+	padding: 10px;
+	font-size: 30px;
+	width: 240px;
+	border-radius: 15px;	
+	text-align: center;
+}
+
+#errorNotif
+{
+	display: none;
+	text-align: center;
+	position: fixed;
+	right: 10px;
+	border: 1px solid black;
+	background-color: #71c7f0;
+	border-radius: 10px;
+	top: 10px;
+	color: white;
+}
+
+#errorMsg
+{
+	padding: 20px;
+}
+
+/*#*/

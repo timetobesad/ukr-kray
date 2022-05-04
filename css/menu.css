@@ -1,0 +1,57 @@
+.menuBox
+{
+	margin-top: 20px;
+	margin-left: 200px !important;
+}
+
+#selectedMenuType
+{
+	display: block;
+	color: white;
+	font-family: CeraPro;
+	width: 1200px;
+	margin-top: 220px;
+	margin-left: 500px;
+}
+
+.choiceItem
+{
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 300px;
+	display: inline-block;
+	cursor: pointer;
+	background-color: #71c7f0;
+	text-align: center;
+	padding: 20px 10px;
+	margin: 3px;
+}
+
+.centerChoice
+{
+	margin-left: 335px;
+}
+
+.choiceItem:hover
+{
+	color: black;
+	background-color: #eded61;
+}
+
+.selChoice
+{
+	background-color: #eded61;
+	color: black;
+}
+
+.selChoice:hover
+{
+	background-color: #eded61;
+	color: black;
+}
+
+.noLink
+{
+	text-decoration: none;
+	color: white;
+}

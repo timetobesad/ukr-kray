@@ -1,0 +1,336 @@
+/* for small screen */
+@media screen and (max-width: 1400px)
+{
+	body
+	{
+		background-color: orange;
+	}
+	
+	#warnBlock
+	{
+		
+	}
+	
+	#topBoxMenu
+	{
+		background-image:url(img/indexUpMenuLine_1300.png);
+		height: 75px;
+	}
+}
+
+body
+{
+	min-height: 70%;
+	overflow-x: hidden;
+}
+
+#warnBlock
+{
+	width: 100%;
+	font-family: oldType;
+	background-color: #141414;
+	color: white;
+	position: fixed;
+	z-index: 1000;
+	top: 0px;
+	left: 0px;
+	padding: 20px 35px;
+	height: 20px;
+}
+
+#topBoxMenu
+{
+	background-image:url(img/indexUpMenuLine.png);
+    border: 1px solid black;
+	position: fixed;
+	z-index: 1000;
+	top: 55px;
+	left: 0px;
+	width: 100%;
+	height: 110px;
+}
+
+#blockList
+{
+	width: 830px;
+	height: 40px;
+	position: fixed;
+	top: 95px;
+	left: 50px;
+	font-size: 16px;
+}
+
+.topMenuBox
+{
+	font-family: CeraPro;
+	font-weight: bold;
+	width: 100px;
+	display: inline-block;
+	padding: 10px;
+	text-align: center;
+}
+
+.topMenuBox a
+{
+	color: white;
+	text-decoration: none;
+}
+
+.topMenuBox:hover .menuContent {display: grid;}
+
+.menuContent
+{
+	display: none;
+	position: absolute;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+#blockList a:hover
+{
+	color: orange;
+}
+
+#feedBackBtn
+{
+	width: 200px;
+    padding: 15px 0px;
+    right: 500px;
+    top: 80px;
+}
+
+#feedBackBtn:hover
+{
+	background-color: #eded61;
+	color: black;
+	cursor: pointer;
+}
+
+#timeWorkBox
+{
+    width: 270px;
+    padding: 5px 0px;
+    right: 140px;
+    top: 85px;
+    font-size: 12px;
+}
+
+#phoneBox
+{
+	width: 180px;
+	padding: 5px;
+	right: 220px;
+	top: 50px;
+	font-size: 12px;
+}
+
+#rightMenuIcon
+{
+	width: 80px;
+	height: 80px;
+	background-image:url(img/rightMenuIcon.png);
+	border-radius: 5px;
+    position: fixed;
+	right: 30px;
+	top: 50px;
+	cursor: pointer;
+}
+
+.box
+{
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	text-align: center;
+	background-color: #71c7f0;
+    font-family: comicSan;
+	font-weight: bold;
+    position: fixed;
+}
+
+#workInfoBox
+{
+	color: white;
+	text-align: left;
+    font-family: comicSan;
+	font-weight: bold;
+    position: fixed;
+	right: 100px;
+	top: 80px;
+}
+
+#phoneIconBox
+{
+	background-image: url(img/phoneIcon.png);
+	width: 80px;
+	height: 80px;
+	position: fixed;
+	right: 360px;
+	top: 70px;
+}
+
+#noveltyImg
+{
+	display: block;
+	margin-left: 150px;
+	margin-top: 170px;
+	border-radius: 15px;
+	border: 1px solid white;
+}
+
+#menuMainPage
+{
+    width: 1620px;
+    margin-left: 140px;
+}
+
+.dish
+{
+    width: 400px;
+    height: 500px;
+	display: inline-block;
+	margin-top: 3px;
+}
+
+.dish img
+{
+	width: 350px;
+	height: 350px;
+	padding: 25px;
+}
+
+.dishTtitle
+{
+	font-family: 'CeraPro';
+	font-size: 20px;
+	color: gray;
+	position: relative;
+	left: 20px;
+}
+
+.dishPrice
+{
+	font-family: 'CeraPro';
+	font-size: 20px;
+	color: black;
+	position: relative;
+	top: -25px;
+	left: 320px;
+}
+
+.dishDesc
+{
+	font-family: oldType;
+	color: black;
+	font-weight: bold;
+	width: 380px;
+	height: 50px;
+	text-align: center;
+}
+
+#bottomBoxNav
+{
+	border-radius: 15px;
+	width: 1200px;
+	height: 100px;
+	position: relative;
+	left: 450px;
+	top: 50px;
+}
+
+#bottomMenu
+{
+	left: 50px;
+}
+
+#bottomLocation
+{
+    left: 450px;
+    margin-top: 15px;
+}
+
+#bottomSocial
+{
+	left: 800px;
+	padding: 10px;
+}
+
+.bottomBox
+{
+	width: 300px;
+	height: 100px;
+	display: inline-block;
+	margin-left: 50px;
+	position: absolute;
+    color: black;
+    font-family: comicSan;
+    text-align: center;
+}
+
+#bottomMenu a
+{
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+
+#bottomMenu a:hover
+{
+	color: orange;
+}
+
+#rightMenuBox
+{
+	width: 350px;
+	height: 100%;
+	position: fixed;
+	z-index: 10001;
+	top: 0;
+	right: 0px;
+	background-color: rgb(203, 130, 232, 0.5);
+	display: none;
+}
+
+#rightMenuContent
+{
+	position: fixed;
+	top: 200px;
+	font-family: 'CeraPro';
+	width: 200px;
+	text-align: center;
+	right: 120px;
+	display: none;
+}
+
+#rightMenuContent a
+{
+	text-decoration: none;
+	color: white;
+	display: block;
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+#rightMenuContent a:hover
+{
+	color: orange;
+}
+
+#rightMenuCloseBtn
+{
+	display: none;
+	width: 100px;
+	height: 100px;
+	background-image: url(img/closeIcon_NORMAL.png);
+	position: fixed;
+	right: 30px;
+	top: 50px;
+	cursor: pointer;
+}
+
+#rightMenuCloseBtn:hover
+{
+	background-image: url(img/closeIcon_HOVER.png);
+}

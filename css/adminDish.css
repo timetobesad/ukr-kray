@@ -1,0 +1,121 @@
+#mainBox
+{
+    border: 1px solid black;
+    width: 700px;
+    height: 700;
+    margin: 20px auto;
+}
+
+#addDishBtn
+{
+    border: 1px solid black;
+    width: 100px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 5px;
+    position: relative;
+    left: 570px;
+    top: 10px;
+    cursor: pointer;
+    font-family: typeWriter;
+}
+
+#addDishBtn:hover
+{
+	top: 15px;
+	left: 565px;
+}
+
+#bgFon
+{
+	opacity: 0.8;
+	position: fixed;
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+#addDishBox
+{
+    position: fixed;
+    z-index: 2;
+    width: 600px;
+    height: 500px;
+    top: 150px;
+    left: 640px;
+	opacity: 0.5;
+	display: none;
+}
+
+input
+{
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    padding: 5px;
+    width: 300px;
+    margin: auto auto;
+    display: block;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+textarea
+{
+	display: block;
+    width: 300px;
+    height: 100px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 10px;
+    font-family: cursive;
+}
+
+#srcPathView
+{
+    display: block;
+    margin: auto auto;
+    width: 400px;
+    text-align: center;
+    font-family: cursive;
+    color: white;
+}
+
+#closeBtn
+{
+	background-image: url(../img/closeIcon.png);
+    position: fixed;
+    z-index: 2;
+    top: 10px;
+    right: 10;
+    width: 64px;
+    height: 64px;
+	cursor: pointer;
+	display: none;
+}
+
+#closeBtn:hover
+{
+	top: 15px;
+	right: 15px;
+}
+
+input[type=button]
+{
+	cursor: pointer;
+}
+
+select
+{
+	font-size: 20px;
+    text-align: center;
+    width: 200;
+    font-family: cursive;
+    margin: auto auto;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid white;
+}
