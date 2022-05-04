@@ -35,9 +35,16 @@
 			
 			<span id='srcPathView' class='inputNewDish' >default image</span>
 			
-			<input type='button' name='uplImgButton' value='Завантажити фото' />
+			<input type='button' id='uplImgButton' name='uplImgButton'  value='Завантажити фото' />
 			<input type='button' id='addDishComplBtn' name='addDishComplBtn' value='Додати страву' />
 		</div>
+		
+		<div id='cropHandle' ></div>
+		<img src='' id='uploadImgView' />
+		
+		<form id="uploadImgForm" action="upload.php" method="post" enctype="multipart/form-data">
+            <input id="imgInput" type="file" accept="image/*" name="image" />
+        </form>
 
 	</body>
 </html>

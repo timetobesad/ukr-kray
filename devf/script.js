@@ -19,6 +19,10 @@ $(document).ready(function(){
             success: function(response){
 
                 console.log(response);
+				
+				var result = JSON.parse(response);
+				
+				console.log(result);
             }
 
         });

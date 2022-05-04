@@ -2,7 +2,7 @@
 
 	class Dish
 	{
-		public static addNew($info)
+		public static function addNew($info)
 		{
 			
 		}

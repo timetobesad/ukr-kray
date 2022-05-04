@@ -1,5 +1,7 @@
 <?php
 
+	date_default_timezone_set('UTC');
+
 	$adminKey = '1';
 	
 	if(isset($_COOKIE['phpsessid']))
@@ -11,8 +13,8 @@
 
 	include_once('class/db.class.php');
 	
-	$db = new DB(array('login' => 'krayh144_db', 'pass' => '6rCtx9Tk',
-						'host' => '1pcf11', 'name' => 'krayh144_db'));
+	$db = new DB(array('login' => 'root', 'pass' => '',
+						'host' => '127.0.0.1', 'name' => 'krayh144_db'));
 	$db->connect();
 	
 	if(!$db->isConnected)
