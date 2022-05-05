@@ -34,6 +34,11 @@
         $origW = $origSize[0];
 		$origH = $origSize[1];
 		
+		if($origW < $width || $origH < $height)
+		{
+			$response['msg'] = 'Мінімальний розмір зображення має бути 500х700';
+		}
+		
 		if($origW < $origH)
 			$coff =  $origW / $width;
 		else
@@ -49,7 +54,22 @@
 		$dsX = ($width - $newW) / 2;
 		$dxY = ($height - $newH) / 2;
 		
-		$tmpImg = imagecreatefromjpeg($file['tmp_name']);
+		switch($file['type'])
+		{
+			case 'image/png':
+				$tmpImg = imagecreatefrompng($file['tmp_name']);
+			break;
+			case 'image/jpeg':
+				$tmpImg = imagecreatefromjpeg($file['tmp_name']);
+			break;
+			case 'image/bmp':
+				$tmpImg = imagecreatefromwbmp($file['tmp_name']);
+			break;
+			default:
+				$response['msg'] = 'Даний формат не підтримується';
+				die(json_encode($response));
+			break;
+		}
 		
 		imagecopyresized($img, $tmpImg,  $dsX, $dxY, 0, 0, $newW, $newH, $origW, $origH);
 		

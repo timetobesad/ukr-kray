@@ -25,7 +25,7 @@ $(document).ready(function(){
 		
 			$('.inputNewDish').each(function(){
 				
-				$(this).val('').text('');
+				$(this).val('').text('').removeClass('succInput').removeClass('errInput');
 				
 			});
 		
@@ -114,15 +114,27 @@ $(document).ready(function(){
 
 function addDishEvent()
 {		
-	// check for empty field
-	
 	var info = {  };
+	var isError = false;
 		
 	$('#addDishBox').find('input[type=label],textarea').each(function(){
 			
+		console.log($(this).val().length)
+			
+		if($(this).val().length == 0)
+		{
+			isError = true;
+			addErrorForm($(this));
+			return;
+		}
+		
+		delErrorForm($(this));
 		info[$(this).attr('name')] = $(this).val();
 			
-	})
+	});
+	
+	if(isError)
+		return;
 		
 	var data = { 'action':'add', 'info':info };
 		
@@ -138,6 +150,18 @@ function addDishEvent()
 		}
 
 	});
+}
+
+function addErrorForm(block)
+{
+	block.removeClass('succInput');
+	block.addClass('errInput');
+}
+
+function delErrorForm(block)
+{
+	block.removeClass('errInput');
+	block.addClass('succInput');
 }
 
 function uploadImageEvent()
